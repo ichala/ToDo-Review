@@ -4,8 +4,7 @@ import SingleTask from './Task.js';
 export const LocalSave = (arr) => {
   localStorage.setItem('tasks', JSON.stringify(arr));
   const ContainerList = document.querySelector('.lists');
-  ContainerList.innerHTML='';
-  display(arr)
+ location.reload();
 };
 
 const RefactorIndex = (tasks) => {
